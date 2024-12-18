@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.AlterarUsuarioControle">
+   <children>
+      <ImageView fitHeight="640.0" fitWidth="981.0" layoutX="-1.0">
+         <image>
+            <Image url="@../assets/AlterarUsuario.png" />
+         </image>
+      </ImageView>
+      <ComboBox fx:id="listar" layoutX="739.0" layoutY="129.0" prefHeight="25.0" prefWidth="183.0" />
+      <TextField fx:id="nome" layoutX="739.0" layoutY="200.0" prefHeight="25.0" prefWidth="183.0" />
+      <TextField fx:id="senha" layoutX="739.0" layoutY="271.0" prefHeight="25.0" prefWidth="183.0" />
+      <Label layoutX="464.0" layoutY="125.0" prefHeight="34.0" prefWidth="272.0" text="USUÁRIOS CADASTRADOS :" textFill="#342cab">
+         <font>
+            <Font name="Bookman Old Style" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="558.0" layoutY="202.0" text="ALTERAR NOME :" textFill="#342cab">
+         <font>
+            <Font name="Bookman Old Style" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="557.0" layoutY="273.0" text="ALTERAR SENHA:" textFill="#342cab">
+         <font>
+            <Font name="Bookman Old Style" size="18.0" />
+         </font>
+      </Label>
+      <Button mnemonicParsing="false" onAction="#voltarMenu" prefHeight="57.0" prefWidth="116.0" text="MENU" textFill="#342cab">
+         <font>
+            <Font name="Bookman Old Style" size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="770.0" layoutY="360.0" mnemonicParsing="false" onAction="#gravar" prefHeight="50.0" prefWidth="122.0" text="GRAVAR" textFill="#342cab">
+         <font>
+            <Font name="Bookman Old Style" size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="577.0" layoutY="360.0" mnemonicParsing="false" onAction="#voltarMenu" prefHeight="50.0" prefWidth="122.0" text="CANCELAR" textFill="#342cab">
+         <font>
+            <Font name="Bookman Old Style" size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

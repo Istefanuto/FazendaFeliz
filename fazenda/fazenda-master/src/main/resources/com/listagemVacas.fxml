@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ListagemVacas">
+   <children>
+      <ImageView fitHeight="662.0" fitWidth="947.0">
+         <image>
+            <Image url="@../assets/listagemDasVacas.png" />
+         </image>
+      </ImageView>
+      <TableView fx:id="tabelaVacas" layoutX="144.0" layoutY="135.0" prefHeight="265.0" prefWidth="237.0">
+        <columns>
+          <TableColumn fx:id="colunaBrinco" prefWidth="75.0" text="BRINCO" />
+          <TableColumn fx:id="colunaNome" prefWidth="75.0" text="NOME" />
+            <TableColumn fx:id="colunaRaca" prefWidth="75.0" text="RAÇA" />
+        </columns>
+      </TableView>
+      <Button layoutX="840.0" mnemonicParsing="false" onAction="#voltarMenu" prefHeight="72.0" prefWidth="107.0" text="MENU" textFill="#2231b9">
+         <font>
+            <Font name="Bookman Old Style" size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

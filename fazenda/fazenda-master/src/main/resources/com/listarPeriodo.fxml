@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ListarPeriodoControle">
+   <children>
+      <ImageView fitHeight="646.0" fitWidth="940.0">
+         <image>
+            <Image url="@../assets/listarPeriodo.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="364.0" layoutY="182.0" prefHeight="21.0" prefWidth="61.0" text="DIA:" textFill="#2826ab">
+         <font>
+            <Font name="Bookman Old Style" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="364.0" layoutY="219.0" text="MÊS:" textFill="#2826ab">
+         <font>
+            <Font name="Bookman Old Style" size="18.0" />
+         </font></Label>
+      <ComboBox fx:id="comboMeses" layoutX="479.0" layoutY="217.0" prefHeight="25.0" prefWidth="174.0" />
+      <DatePicker fx:id="datePickerDia" layoutX="479.0" layoutY="180.0" />
+      <TableView fx:id="tabelaProducao" layoutX="364.0" layoutY="274.0" prefHeight="200.0" prefWidth="258.0">
+        <columns>
+          <TableColumn fx:id="colunaBrinco" prefWidth="75.0" text="BRINCO" />
+          <TableColumn fx:id="colunaData" prefWidth="75.0" text="DATA" />
+            <TableColumn fx:id="colunaQuantidade" prefWidth="110.0" text="QUANTIDADE" />
+        </columns>
+      </TableView>
+      <Button mnemonicParsing="false" onAction="#voltarMenu" text="MENU" textFill="#2826ab">
+         <font>
+            <Font name="Bookman Old Style" size="18.0" />
+         </font></Button>
+      <Button layoutX="429.0" layoutY="498.0" mnemonicParsing="false" onAction="#procurar" text="PROCURAR" textFill="#2826ab">
+         <font>
+            <Font name="Bookman Old Style" size="18.0" />
+         </font></Button>
+   </children>
+</AnchorPane>

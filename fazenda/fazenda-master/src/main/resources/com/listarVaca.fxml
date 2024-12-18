@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ListarPorVacaControle">
+   <children>
+      <ImageView fitHeight="648.0" fitWidth="934.0">
+         <image>
+            <Image url="@../assets/listarVaca.png" />
+         </image>
+      </ImageView>
+      <TableView fx:id="tabelaProducao" layoutX="341.0" layoutY="200.0" prefHeight="200.0" prefWidth="322.0">
+        <columns>
+          <TableColumn fx:id="colunaQuantidade" prefWidth="162.0" text="QUANTIDADE" />
+            <TableColumn fx:id="colunaData" minWidth="0.0" prefWidth="159.0" text="DATA" />
+        </columns>
+      </TableView>
+      <Button mnemonicParsing="false" onAction="#voltarMenu" prefHeight="57.0" prefWidth="108.0" text="MENU" textFill="#2826ab">
+         <font>
+            <Font name="Bookman Old Style" size="18.0" />
+         </font>
+      </Button>
+      <ComboBox fx:id="listar" layoutX="489.0" layoutY="138.0" prefWidth="150.0" />
+      <Label layoutX="378.0" layoutY="140.0" text="BRINCO:" textFill="#2826ab">
+         <font>
+            <Font name="Bookman Old Style" size="18.0" />
+         </font></Label>
+      <Button layoutX="458.0" layoutY="429.0" mnemonicParsing="false" onAction="#procurar" prefHeight="57.0" prefWidth="120.0" text="PROCURAR" textFill="#2826ab">
+         <font>
+            <Font name="Bookman Old Style" size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
